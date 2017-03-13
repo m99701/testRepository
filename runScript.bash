@@ -4,7 +4,7 @@ for file in testFiles/*
 do
 	./optimizer.exe optimizer.par "${file}" outsDFS/"$(basename "$file").out" > logsDFS/"$(basename "$file").log"
 done
-for file in testFiles/increasedLookahead/*
+for file in testFiles2/*
 do
-	./optimizer.exe optimizer.par "${file}" outsDFS/increasedLookahead/"$(basename "$file").out" > logsDFS/increasedLookahead/"$(basename "$file").log"
+	./optimizer.exe optimizer.par "${file}" outsDFS/"$(basename "$file").out" > logsDFS/"$(basename "$file").log"
 done
